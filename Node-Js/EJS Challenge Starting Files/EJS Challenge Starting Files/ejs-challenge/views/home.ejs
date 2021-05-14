@@ -1,0 +1,25 @@
+<%- include('partials/header') %>  
+
+<h1>Home</h1>
+
+<p><%=  content  %></p>
+
+<% posts.forEach(function(post) { %> 
+        <!-- <% console.log(post.content) %>  -->
+        <h1><%= post.title %> </h1>      
+        <% let content = post.content %>
+        <% console.log(content.length) %> 
+        <% if (content.length > 150) {  %>
+                <%  content = content.substring(0, 149) + '...'; %>
+                <p> <%= content %> 
+                <a href="/posts/<%=post._id%>">Read More</a>
+                </p>   
+
+    <% } else { %>     
+                <p> <%= content %> </p>   
+        <% } %>
+<% }); %> 
+
+
+<%- include('partials/footer') %>   
+

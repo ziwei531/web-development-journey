@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+    main {
+        height: calc(100vh - 80px);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For fun</title>
+</head>
+<body>
+
+    <main>
+        <h1>Hi there!</h1>
+    </main>
+        
+
+
+</body>
+
+<script>
+
+    setInterval(() => { changeRandom(); }, 5000); //second parameter is milisecond
+
+    function changeRandom() {
+        let randomWords = ["0342855", "Why am I here just to suffer uwu", "Imagine life being all blissful uwu"];
+        let random = Math.random() * randomWords.length;
+        random = Math.floor(random);
+        document.querySelector("h1").innerHTML = randomWords[random];
+    }
+    
+</script>
+</html>
