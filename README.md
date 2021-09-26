@@ -19,3 +19,4 @@ Technologies that I have learned on this course:
 * Authentication and Security
 * React js
 
+In addition, I have also done an extra course, [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/certification/ziwei/javascript-algorithms-and-data-structures), offered by FreeCodeCamp. This allowed me to further develop my understanding in Javascript and general programming skills. 
